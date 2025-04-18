@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="form-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform
+        </p>
+        <form id="survey-form">
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter Name" required />
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required />
+            <label id="number-label">Number</label>
+            <input id="number" type="number" min="6" max="24" placeholder="Enter Number" required />
+            <label id="dropdown-label">Select your Age:</label> <br>
+            <select id="dropdown" name="category">
+                <option value="Teen Age">Under 18</option>
+                <option value="Younger">Above 18</option>
+            </select>
+            <div>
+                <label id="gender-label">Choose your Gender:</label>
+                <input type="radio" name="gender" value="Male" /> Male
+                <input type="radio" name="gender" value="Female" /> Female <br>
+            </div>
+            <div>
+                <label id="gender-label">Choose your Hobbies:</label>
+                <input type="checkbox" name="hoppies" value="Reading" /> Reading
+                <input type="checkbox" name="hobbies" value="Sports" /> Playing <br>
+            </div>
+            <label id="textarea-label">Leave a comment:</label>
+            <textarea id="textarea"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
